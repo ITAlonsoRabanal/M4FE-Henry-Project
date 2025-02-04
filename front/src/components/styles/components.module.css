@@ -1,0 +1,16 @@
+.navButtons {
+    @apply text-white
+}
+
+.navBar {
+    background: rgb(3,62,163);
+    background: radial-gradient(circle, rgba(3,62,163,1) 28%, rgba(3,57,148,1) 44%, rgba(3,50,129,1) 58%, rgba(3,42,107,1) 81%, rgba(1,37,96,1) 92%, rgba(0,31,84,1) 100%);
+}
+
+.formFields {
+    @apply  p-1 border rounded
+}
+
+.cartSpans {
+    @apply md:text-3xl font-medium font-serif text-lg
+}
