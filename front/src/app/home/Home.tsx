@@ -1,14 +1,11 @@
 // vendors 
 import React from "react"
 
-// utils
-import { productsArray } from "../../utils/products"
-
 // components
 import { CardList } from "@/components/CardList"
 
 
-const Home: React.FC = (): React.ReactElement => {
+export default function Home (): React.ReactElement {
     return (
         <div>
             <div className="flex flex-col max-w-6xl p-2 mx-auto mt-24">
@@ -21,5 +18,3 @@ const Home: React.FC = (): React.ReactElement => {
         </div>
     )
 }
-
-export default Home;

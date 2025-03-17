@@ -25,7 +25,7 @@ import Cookies from "js-cookie";
 
 export const LoginForm : React.FC = (): React.ReactElement => {
 
-    const { userData, setUserData } = useAuth();
+    const { setUserData } = useAuth();
     const router = useRouter()
 
     return (

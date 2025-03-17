@@ -14,7 +14,7 @@ const LogoutButton: React.FC = (): React.ReactElement => {
         setUserData(null);
         localStorage.removeItem("userSession")
         localStorage.removeItem("cart")
-        router.push("/")
+        router.push("/Landing")
         Cookies.remove("userData")
         alert(`Has cerrado la sesion`)
     }

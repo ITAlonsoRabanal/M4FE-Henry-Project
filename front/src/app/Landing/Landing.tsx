@@ -1,10 +1,10 @@
 import React from "react";
 
-import image from "../../assets/3d-rendering-of-blue-digital-wireframe-waves-in-abstract-technological_11912931_wh1200.jpg"
+import image from "../../../assets/3d-rendering-of-blue-digital-wireframe-waves-in-abstract-technological_11912931_wh1200.jpg"
 import Link from "next/link";
 
 
-export const Landing: React.FC = (): React.ReactElement  => {
+export default function Landing(): React.ReactElement {
     return (
         <div className="flex flex-row grow bg-cover md:pl-20 md:pt-20 p-10" style={{ backgroundImage: `url(${image.src})` }}>
 
@@ -28,5 +28,3 @@ export const Landing: React.FC = (): React.ReactElement  => {
         </div>
     );
 }
-
-export default Landing;

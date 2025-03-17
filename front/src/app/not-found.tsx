@@ -4,6 +4,7 @@ import React from "react"
 // assets
 import image from "../../assets/1662569.jpg"
 import Link from "next/link";
+import Image from "next/image";
 
 
 const NotFound: React.FC = (): React.ReactElement => {
@@ -14,7 +15,7 @@ const NotFound: React.FC = (): React.ReactElement => {
             className="my-10 flex flex-col max-w-sm overflow-hidden border rounded-xl p-3 bg-slate-50 shadow-xl hover:scale-105 transition">
                 <h2 className="text-3xl mb-2 font-medium">Ups...</h2>
                 <h3>Como llegaste hasta aqui?</h3>
-                <img className="mb-3 p-3" src={image.src}/>
+                <Image className="mb-3 p-3" src={image.src} alt={"not-found"}/>
                 <p>No hemos podido encontrar lo que buscabas</p>
                 
             </div>

@@ -3,9 +3,6 @@
 //vendors
 import React, { Dispatch, SetStateAction } from "react";
 
-// hooks
-import { useEffect, useState } from "react";
-
 // types
 import { IProducts } from "./types";
 
@@ -15,6 +12,7 @@ import styles from "./styles/components.module.css"
 // icons
 import { XCircle } from "lucide-react";
 import { saveOrder } from "@/helpers/api/order.helper";
+import Image from "next/image";
 
 export const ProductCart: React.FC<{ cart: IProducts[]; setTotal: Dispatch<SetStateAction<number>>, setCart: Dispatch<SetStateAction<IProducts[]>>, total: number }> = ({ cart, setTotal, total, setCart }): React.ReactElement => {
 
@@ -66,7 +64,7 @@ export const ProductCart: React.FC<{ cart: IProducts[]; setTotal: Dispatch<SetSt
                             <div key={product.id} className="grid grid-cols-3 justify-between overflow-hidden border rounded-xl py-3  bg-slate-50 shadow-2xl hover:scale-105 transition">
                                 <div className="flex flex-col gap-2 px-2">
                                     <p className="flex w-52 md:text-xl text-xs font-medium ">{product.name}</p>
-                                    <img src={product.image} className="w-52 "/>
+                                    <Image alt="Producto" src={product.image} className="w-52 "/>
                                 </div>
                                 <p className="flex justify-center self-center md:text-3xl">${product.price}</p>
                                 <div className="flex justify-end self-center ">

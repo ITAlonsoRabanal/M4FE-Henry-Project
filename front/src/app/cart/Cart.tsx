@@ -19,7 +19,7 @@ export const Cart : React.FC = (): React.ReactElement => {
 
     const { userData } = useAuth()
     const [ cart, setCart ] = useState<IProducts[]>([]);
-    const [ total, setTotal ] =useState<number>(0);
+    const [ total, setTotal ] = useState<number>(0);
 
     useEffect(() => {
             const storedCart: IProducts[] = JSON.parse(localStorage.getItem("cart") || "[]")

@@ -4,10 +4,7 @@ import { NextRequest, NextResponse } from "next/server";
 
 export function middleware(request: NextRequest) {
 
-    const { pathname, origin } = request.nextUrl;
-
-    console.log(pathname);
-    
+    const { pathname, origin } = request.nextUrl;    
 
     if((pathname === "/dashboard" || pathname === "/cart") && !request.cookies.get("userData")?.value) {
 

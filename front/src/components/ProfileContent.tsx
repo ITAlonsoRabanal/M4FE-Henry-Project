@@ -1,13 +1,12 @@
 'use client'
 
-import { useAuth } from "@/context/AuthContext";
-import { User2Icon, UserCircle, Users } from "lucide-react";
+import { UserCircle } from "lucide-react";
 
 
 
 export const ProfileContent = () => {
 
-    let user = JSON.parse(localStorage.getItem("userSession") || "")?.user;
+    const user = JSON.parse(localStorage.getItem("userSession") || "")?.user;
 
     return (
         <div className="flex flex-col flex-grow p-10 gap-3">

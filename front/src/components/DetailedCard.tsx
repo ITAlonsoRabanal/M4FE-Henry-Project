@@ -8,6 +8,7 @@ import { catchLinesArray } from "@/utils/products";
 import { IProducts } from "./types";
 import { useAuth } from "@/context/AuthContext";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 
 const DetailedCard: React.FC<IProducts> = (product): React.ReactElement => {
@@ -48,7 +49,7 @@ const DetailedCard: React.FC<IProducts> = (product): React.ReactElement => {
         className="my-10 flex flex-col max-w-sm overflow-hidden border rounded-xl p-3 bg-slate-50 shadow-xl hover:scale-105 transition">
             <h2 className="text-3xl mb-2 font-medium">{name}</h2>
             <h3>{catchLinesArray[id-1]}</h3>
-            <img className="mb-3 p-3" src={image}/>
+            <Image alt={`Product ${name}`} className="mb-3 p-3" src={image}/>
             <p className="mb-3">{description}</p>
             <p>Desde ${price}</p>
             <p>Stock: {stock}</p>
