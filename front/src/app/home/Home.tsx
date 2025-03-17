@@ -2,8 +2,7 @@
 import React from "react"
 
 // components
-import { CardList } from "@/components/CardList"
-
+import CardList from "../../components/CardList"
 
 export default function Home (): React.ReactElement {
     return (
