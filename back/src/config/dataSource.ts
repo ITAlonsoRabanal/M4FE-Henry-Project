@@ -1,5 +1,5 @@
 import { DataSource } from "typeorm";
-import { DB_HOST, DB_NAME, DB_PASSWORD, DB_PORT, DB_USER } from "./envs";
+import { DB_HOST, DB_DATABASE, DB_PASSWORD, DB_PORT, DB_USER } from "./envs";
 import { User } from "../entities/User";
 import { Credential } from "../entities/Credential";
 import { Order } from "../entities/Order";
@@ -12,7 +12,7 @@ export const AppDataSource = new DataSource({
   port: DB_PORT,
   username: DB_USER,
   password: DB_PASSWORD,
-  database: DB_NAME,
+  database: DB_DATABASE,
   synchronize: false,
   // dropSchema: true,
   logging: false,
