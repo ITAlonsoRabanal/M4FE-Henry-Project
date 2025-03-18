@@ -16,7 +16,7 @@ const Card: React.FC<IProducts> = (product) => {
         <div 
         className="my-10 max-w-xs overflow-hidden border rounded-xl p-3 bg-slate-50 shadow-2xl hover:scale-105 transition">
             <h2 className="text-2xl mb-2">{name}</h2>
-            <Image alt={name} className="mb-3 p-3" src={image}/>
+            <Image width={180} height={150} alt={name} className="mb-3 p-3" src={image}/>
             <p>Desde ${price}</p>
         </div>
     )
